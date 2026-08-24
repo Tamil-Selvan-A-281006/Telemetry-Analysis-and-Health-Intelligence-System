@@ -1,0 +1,8 @@
+virtualenv/
+__pycache__/
+*.pyc
+.env
+data/raw/
+data/processed/
+models/*.joblib
+.streamlit/secrets.toml
