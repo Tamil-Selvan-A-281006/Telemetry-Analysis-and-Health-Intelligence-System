@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+from analysis.telemetry_pipeline import analyze_parameter
 from analysis.telemetry_analyzer import analyze_telemetry,analyze_attitude,calculate_rate_of_change
 import os
 import psycopg
@@ -62,14 +63,20 @@ def get_telemetry_data():
 def run_telemetry_analysis():
     analysis_report = []
 
-    # 1. Process generic telemetry
+# Rule-based analysis
+    attitude_data=get_attitude_data()
     telemetry_data = get_telemetry_data()
-    telemetry_results = analyze_telemetry(telemetry_data)
 
+    telemetry_results = analyze_telemetry(telemetry_data)
     analysis_report.extend(telemetry_results)
 
-    # 2. Process attitude telemetry
-    attitude_data = get_attitude_data()
+    # Statistical anomaly detection
+    statistical_results = analyze_parameter(
+        telemetry_data,
+        "temperature"
+    )
+
+    analysis_report.extend(statistical_results)
 
     previous_actual = None
     previous_timestamp = None
@@ -123,4 +130,3 @@ if __name__ == "__main__":
 
     for result in report:
         print(result)
-
