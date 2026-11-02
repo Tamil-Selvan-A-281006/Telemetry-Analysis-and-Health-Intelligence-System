@@ -63,21 +63,56 @@ def get_telemetry_data():
 def run_telemetry_analysis():
     analysis_report = []
 
-# Rule-based analysis
-    attitude_data=get_attitude_data()
+    # 1. Retrieve database records
+    attitude_data = get_attitude_data()
     telemetry_data = get_telemetry_data()
 
+    # 2. Rule-based analysis
     telemetry_results = analyze_telemetry(telemetry_data)
-    analysis_report.extend(telemetry_results)
 
-    # Statistical anomaly detection
+    # 3. Statistical anomaly detection
     statistical_results = analyze_parameter(
         telemetry_data,
         "temperature"
     )
 
-    analysis_report.extend(statistical_results)
+    # 4. Create a lookup for statistical results
+    statistical_lookup = {
+        (
+            item["timestamp"],
+            item["parameter"],
+            item["subsystem"],
+            item["value"]
+        ): item
+        for item in statistical_results
+    }
 
+    # 5. Merge rule-based and statistical results
+    for item in telemetry_results:
+
+        key = (
+            item["timestamp"],
+            item["parameter"],
+            item["subsystem"],
+            item["value"]
+        )
+
+        statistical_result = statistical_lookup.get(key)
+
+        if statistical_result:
+            item["statistical_status"] = (
+                statistical_result["statistical_status"]
+            )
+            item["modified_z_score"] = (
+                statistical_result["modified_z_score"]
+            )
+            item["is_anomaly"] = (
+                statistical_result["is_anomaly"]
+            )
+
+    analysis_report.extend(telemetry_results)
+
+    # 6. Attitude analysis
     previous_actual = None
     previous_timestamp = None
 
@@ -105,12 +140,10 @@ def run_telemetry_analysis():
 
         analysis_report.append(analysis_result)
 
-        # Preserve the current reading for the next iteration
         previous_actual = current_actual
         previous_timestamp = current_timestamp
 
     return analysis_report
-    
 
 def display_alert(result):
     if not result:
