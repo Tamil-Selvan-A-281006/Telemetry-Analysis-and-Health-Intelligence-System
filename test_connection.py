@@ -70,24 +70,44 @@ def run_telemetry_analysis():
     # 2. Rule-based analysis
     telemetry_results = analyze_telemetry(telemetry_data)
 
-    # 3. Statistical anomaly detection
-    statistical_results = analyze_parameter(
+    # 3. Statistical + ML anomaly detection
+    combined_results = analyze_parameter(
         telemetry_data,
         "temperature"
     )
 
-    # 4. Create a lookup for statistical results
-    statistical_lookup = {
-        (
+    # 4. Create lookup for combined detector results
+    combined_lookup = {
+    (
+        item["timestamp"],
+        item["parameter"],
+        item["subsystem"],
+        item["value"]
+    ): item
+    for item in combined_results
+    }
+
+    print("\n--- INTEGRATION DEBUG ---")
+
+    print("Rule-based records:", len(telemetry_results))
+    print("Combined detector records:", len(combined_results))
+    print("Lookup records:", len(combined_lookup))
+
+    print("\nDetector lookup keys:")
+
+    for key in combined_lookup:
+        print(key)
+
+    print("\nRule-based lookup keys:")
+
+    for item in telemetry_results:
+        print((
             item["timestamp"],
             item["parameter"],
             item["subsystem"],
             item["value"]
-        ): item
-        for item in statistical_results
-    }
-
-    # 5. Merge rule-based and statistical results
+        ))
+    # 5. Merge detector results into rule-based results
     for item in telemetry_results:
 
         key = (
@@ -97,18 +117,18 @@ def run_telemetry_analysis():
             item["value"]
         )
 
-        statistical_result = statistical_lookup.get(key)
+        detector_result = combined_lookup.get(key)
 
-        if statistical_result:
-            item["statistical_status"] = (
-                statistical_result["statistical_status"]
-            )
-            item["modified_z_score"] = (
-                statistical_result["modified_z_score"]
-            )
-            item["is_anomaly"] = (
-                statistical_result["is_anomaly"]
-            )
+        if detector_result:
+            item.update({
+                "statistical_status": detector_result["statistical_status"],
+                "modified_z_score": detector_result["modified_z_score"],
+                "statistical_is_anomaly": detector_result["statistical_is_anomaly"],
+                "ml_status": detector_result["ml_status"],
+                "ml_score": detector_result["ml_score"],
+                "ml_is_anomaly": detector_result["ml_is_anomaly"],
+                "is_anomaly": detector_result["is_anomaly"],
+            })
 
     analysis_report.extend(telemetry_results)
 

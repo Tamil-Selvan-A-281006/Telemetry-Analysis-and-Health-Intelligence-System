@@ -1,0 +1,301 @@
+trial,phase,normal_mean,detector,false_positives,true_negatives,false_positive_rate
+1,Baseline,40,Modified Z-Score,0,100,0.0
+1,Baseline,40,Isolation Forest,13,87,0.13
+1,Mild Drift,41,Modified Z-Score,3,97,0.03
+1,Mild Drift,41,Isolation Forest,36,64,0.36
+1,Moderate Drift,42,Modified Z-Score,23,77,0.23
+1,Moderate Drift,42,Isolation Forest,77,23,0.77
+1,Strong Drift,43,Modified Z-Score,64,36,0.64
+1,Strong Drift,43,Isolation Forest,98,2,0.98
+1,Severe Drift,44,Modified Z-Score,96,4,0.96
+1,Severe Drift,44,Isolation Forest,99,1,0.99
+2,Baseline,40,Modified Z-Score,0,100,0.0
+2,Baseline,40,Isolation Forest,10,90,0.1
+2,Mild Drift,41,Modified Z-Score,3,97,0.03
+2,Mild Drift,41,Isolation Forest,33,67,0.33
+2,Moderate Drift,42,Modified Z-Score,16,84,0.16
+2,Moderate Drift,42,Isolation Forest,76,24,0.76
+2,Strong Drift,43,Modified Z-Score,62,38,0.62
+2,Strong Drift,43,Isolation Forest,99,1,0.99
+2,Severe Drift,44,Modified Z-Score,92,8,0.92
+2,Severe Drift,44,Isolation Forest,100,0,1.0
+3,Baseline,40,Modified Z-Score,0,100,0.0
+3,Baseline,40,Isolation Forest,14,86,0.14
+3,Mild Drift,41,Modified Z-Score,1,99,0.01
+3,Mild Drift,41,Isolation Forest,32,68,0.32
+3,Moderate Drift,42,Modified Z-Score,18,82,0.18
+3,Moderate Drift,42,Isolation Forest,84,16,0.84
+3,Strong Drift,43,Modified Z-Score,59,41,0.59
+3,Strong Drift,43,Isolation Forest,99,1,0.99
+3,Severe Drift,44,Modified Z-Score,94,6,0.94
+3,Severe Drift,44,Isolation Forest,100,0,1.0
+4,Baseline,40,Modified Z-Score,0,100,0.0
+4,Baseline,40,Isolation Forest,12,88,0.12
+4,Mild Drift,41,Modified Z-Score,2,98,0.02
+4,Mild Drift,41,Isolation Forest,43,57,0.43
+4,Moderate Drift,42,Modified Z-Score,11,89,0.11
+4,Moderate Drift,42,Isolation Forest,89,11,0.89
+4,Strong Drift,43,Modified Z-Score,53,47,0.53
+4,Strong Drift,43,Isolation Forest,97,3,0.97
+4,Severe Drift,44,Modified Z-Score,92,8,0.92
+4,Severe Drift,44,Isolation Forest,100,0,1.0
+5,Baseline,40,Modified Z-Score,0,100,0.0
+5,Baseline,40,Isolation Forest,8,92,0.08
+5,Mild Drift,41,Modified Z-Score,3,97,0.03
+5,Mild Drift,41,Isolation Forest,25,75,0.25
+5,Moderate Drift,42,Modified Z-Score,24,76,0.24
+5,Moderate Drift,42,Isolation Forest,76,24,0.76
+5,Strong Drift,43,Modified Z-Score,63,37,0.63
+5,Strong Drift,43,Isolation Forest,97,3,0.97
+5,Severe Drift,44,Modified Z-Score,96,4,0.96
+5,Severe Drift,44,Isolation Forest,100,0,1.0
+6,Baseline,40,Modified Z-Score,0,100,0.0
+6,Baseline,40,Isolation Forest,6,94,0.06
+6,Mild Drift,41,Modified Z-Score,1,99,0.01
+6,Mild Drift,41,Isolation Forest,44,56,0.44
+6,Moderate Drift,42,Modified Z-Score,11,89,0.11
+6,Moderate Drift,42,Isolation Forest,86,14,0.86
+6,Strong Drift,43,Modified Z-Score,58,42,0.58
+6,Strong Drift,43,Isolation Forest,100,0,1.0
+6,Severe Drift,44,Modified Z-Score,86,14,0.86
+6,Severe Drift,44,Isolation Forest,100,0,1.0
+7,Baseline,40,Modified Z-Score,0,100,0.0
+7,Baseline,40,Isolation Forest,9,91,0.09
+7,Mild Drift,41,Modified Z-Score,0,100,0.0
+7,Mild Drift,41,Isolation Forest,22,78,0.22
+7,Moderate Drift,42,Modified Z-Score,18,82,0.18
+7,Moderate Drift,42,Isolation Forest,73,27,0.73
+7,Strong Drift,43,Modified Z-Score,41,59,0.41
+7,Strong Drift,43,Isolation Forest,96,4,0.96
+7,Severe Drift,44,Modified Z-Score,88,12,0.88
+7,Severe Drift,44,Isolation Forest,100,0,1.0
+8,Baseline,40,Modified Z-Score,0,100,0.0
+8,Baseline,40,Isolation Forest,10,90,0.1
+8,Mild Drift,41,Modified Z-Score,1,99,0.01
+8,Mild Drift,41,Isolation Forest,33,67,0.33
+8,Moderate Drift,42,Modified Z-Score,17,83,0.17
+8,Moderate Drift,42,Isolation Forest,79,21,0.79
+8,Strong Drift,43,Modified Z-Score,68,32,0.68
+8,Strong Drift,43,Isolation Forest,98,2,0.98
+8,Severe Drift,44,Modified Z-Score,97,3,0.97
+8,Severe Drift,44,Isolation Forest,100,0,1.0
+9,Baseline,40,Modified Z-Score,0,100,0.0
+9,Baseline,40,Isolation Forest,15,85,0.15
+9,Mild Drift,41,Modified Z-Score,2,98,0.02
+9,Mild Drift,41,Isolation Forest,36,64,0.36
+9,Moderate Drift,42,Modified Z-Score,23,77,0.23
+9,Moderate Drift,42,Isolation Forest,83,17,0.83
+9,Strong Drift,43,Modified Z-Score,61,39,0.61
+9,Strong Drift,43,Isolation Forest,99,1,0.99
+9,Severe Drift,44,Modified Z-Score,87,13,0.87
+9,Severe Drift,44,Isolation Forest,100,0,1.0
+10,Baseline,40,Modified Z-Score,0,100,0.0
+10,Baseline,40,Isolation Forest,9,91,0.09
+10,Mild Drift,41,Modified Z-Score,3,97,0.03
+10,Mild Drift,41,Isolation Forest,49,51,0.49
+10,Moderate Drift,42,Modified Z-Score,20,80,0.2
+10,Moderate Drift,42,Isolation Forest,77,23,0.77
+10,Strong Drift,43,Modified Z-Score,58,42,0.58
+10,Strong Drift,43,Isolation Forest,100,0,1.0
+10,Severe Drift,44,Modified Z-Score,94,6,0.94
+10,Severe Drift,44,Isolation Forest,100,0,1.0
+11,Baseline,40,Modified Z-Score,0,100,0.0
+11,Baseline,40,Isolation Forest,7,93,0.07
+11,Mild Drift,41,Modified Z-Score,1,99,0.01
+11,Mild Drift,41,Isolation Forest,49,51,0.49
+11,Moderate Drift,42,Modified Z-Score,16,84,0.16
+11,Moderate Drift,42,Isolation Forest,80,20,0.8
+11,Strong Drift,43,Modified Z-Score,57,43,0.57
+11,Strong Drift,43,Isolation Forest,98,2,0.98
+11,Severe Drift,44,Modified Z-Score,93,7,0.93
+11,Severe Drift,44,Isolation Forest,100,0,1.0
+12,Baseline,40,Modified Z-Score,1,99,0.01
+12,Baseline,40,Isolation Forest,8,92,0.08
+12,Mild Drift,41,Modified Z-Score,0,100,0.0
+12,Mild Drift,41,Isolation Forest,28,72,0.28
+12,Moderate Drift,42,Modified Z-Score,16,84,0.16
+12,Moderate Drift,42,Isolation Forest,80,20,0.8
+12,Strong Drift,43,Modified Z-Score,66,34,0.66
+12,Strong Drift,43,Isolation Forest,100,0,1.0
+12,Severe Drift,44,Modified Z-Score,94,6,0.94
+12,Severe Drift,44,Isolation Forest,100,0,1.0
+13,Baseline,40,Modified Z-Score,0,100,0.0
+13,Baseline,40,Isolation Forest,10,90,0.1
+13,Mild Drift,41,Modified Z-Score,4,96,0.04
+13,Mild Drift,41,Isolation Forest,30,70,0.3
+13,Moderate Drift,42,Modified Z-Score,31,69,0.31
+13,Moderate Drift,42,Isolation Forest,81,19,0.81
+13,Strong Drift,43,Modified Z-Score,72,28,0.72
+13,Strong Drift,43,Isolation Forest,100,0,1.0
+13,Severe Drift,44,Modified Z-Score,94,6,0.94
+13,Severe Drift,44,Isolation Forest,100,0,1.0
+14,Baseline,40,Modified Z-Score,0,100,0.0
+14,Baseline,40,Isolation Forest,15,85,0.15
+14,Mild Drift,41,Modified Z-Score,0,100,0.0
+14,Mild Drift,41,Isolation Forest,33,67,0.33
+14,Moderate Drift,42,Modified Z-Score,15,85,0.15
+14,Moderate Drift,42,Isolation Forest,86,14,0.86
+14,Strong Drift,43,Modified Z-Score,51,49,0.51
+14,Strong Drift,43,Isolation Forest,98,2,0.98
+14,Severe Drift,44,Modified Z-Score,91,9,0.91
+14,Severe Drift,44,Isolation Forest,100,0,1.0
+15,Baseline,40,Modified Z-Score,0,100,0.0
+15,Baseline,40,Isolation Forest,14,86,0.14
+15,Mild Drift,41,Modified Z-Score,1,99,0.01
+15,Mild Drift,41,Isolation Forest,38,62,0.38
+15,Moderate Drift,42,Modified Z-Score,25,75,0.25
+15,Moderate Drift,42,Isolation Forest,81,19,0.81
+15,Strong Drift,43,Modified Z-Score,66,34,0.66
+15,Strong Drift,43,Isolation Forest,100,0,1.0
+15,Severe Drift,44,Modified Z-Score,98,2,0.98
+15,Severe Drift,44,Isolation Forest,100,0,1.0
+16,Baseline,40,Modified Z-Score,0,100,0.0
+16,Baseline,40,Isolation Forest,6,94,0.06
+16,Mild Drift,41,Modified Z-Score,0,100,0.0
+16,Mild Drift,41,Isolation Forest,40,60,0.4
+16,Moderate Drift,42,Modified Z-Score,18,82,0.18
+16,Moderate Drift,42,Isolation Forest,86,14,0.86
+16,Strong Drift,43,Modified Z-Score,62,38,0.62
+16,Strong Drift,43,Isolation Forest,99,1,0.99
+16,Severe Drift,44,Modified Z-Score,92,8,0.92
+16,Severe Drift,44,Isolation Forest,100,0,1.0
+17,Baseline,40,Modified Z-Score,0,100,0.0
+17,Baseline,40,Isolation Forest,14,86,0.14
+17,Mild Drift,41,Modified Z-Score,1,99,0.01
+17,Mild Drift,41,Isolation Forest,39,61,0.39
+17,Moderate Drift,42,Modified Z-Score,25,75,0.25
+17,Moderate Drift,42,Isolation Forest,81,19,0.81
+17,Strong Drift,43,Modified Z-Score,73,27,0.73
+17,Strong Drift,43,Isolation Forest,98,2,0.98
+17,Severe Drift,44,Modified Z-Score,97,3,0.97
+17,Severe Drift,44,Isolation Forest,100,0,1.0
+18,Baseline,40,Modified Z-Score,0,100,0.0
+18,Baseline,40,Isolation Forest,9,91,0.09
+18,Mild Drift,41,Modified Z-Score,2,98,0.02
+18,Mild Drift,41,Isolation Forest,34,66,0.34
+18,Moderate Drift,42,Modified Z-Score,17,83,0.17
+18,Moderate Drift,42,Isolation Forest,75,25,0.75
+18,Strong Drift,43,Modified Z-Score,66,34,0.66
+18,Strong Drift,43,Isolation Forest,97,3,0.97
+18,Severe Drift,44,Modified Z-Score,97,3,0.97
+18,Severe Drift,44,Isolation Forest,100,0,1.0
+19,Baseline,40,Modified Z-Score,0,100,0.0
+19,Baseline,40,Isolation Forest,7,93,0.07
+19,Mild Drift,41,Modified Z-Score,0,100,0.0
+19,Mild Drift,41,Isolation Forest,45,55,0.45
+19,Moderate Drift,42,Modified Z-Score,17,83,0.17
+19,Moderate Drift,42,Isolation Forest,84,16,0.84
+19,Strong Drift,43,Modified Z-Score,62,38,0.62
+19,Strong Drift,43,Isolation Forest,100,0,1.0
+19,Severe Drift,44,Modified Z-Score,91,9,0.91
+19,Severe Drift,44,Isolation Forest,99,1,0.99
+20,Baseline,40,Modified Z-Score,0,100,0.0
+20,Baseline,40,Isolation Forest,11,89,0.11
+20,Mild Drift,41,Modified Z-Score,0,100,0.0
+20,Mild Drift,41,Isolation Forest,41,59,0.41
+20,Moderate Drift,42,Modified Z-Score,7,93,0.07
+20,Moderate Drift,42,Isolation Forest,77,23,0.77
+20,Strong Drift,43,Modified Z-Score,48,52,0.48
+20,Strong Drift,43,Isolation Forest,97,3,0.97
+20,Severe Drift,44,Modified Z-Score,87,13,0.87
+20,Severe Drift,44,Isolation Forest,100,0,1.0
+21,Baseline,40,Modified Z-Score,0,100,0.0
+21,Baseline,40,Isolation Forest,7,93,0.07
+21,Mild Drift,41,Modified Z-Score,0,100,0.0
+21,Mild Drift,41,Isolation Forest,24,76,0.24
+21,Moderate Drift,42,Modified Z-Score,6,94,0.06
+21,Moderate Drift,42,Isolation Forest,80,20,0.8
+21,Strong Drift,43,Modified Z-Score,56,44,0.56
+21,Strong Drift,43,Isolation Forest,99,1,0.99
+21,Severe Drift,44,Modified Z-Score,83,17,0.83
+21,Severe Drift,44,Isolation Forest,100,0,1.0
+22,Baseline,40,Modified Z-Score,0,100,0.0
+22,Baseline,40,Isolation Forest,13,87,0.13
+22,Mild Drift,41,Modified Z-Score,1,99,0.01
+22,Mild Drift,41,Isolation Forest,36,64,0.36
+22,Moderate Drift,42,Modified Z-Score,13,87,0.13
+22,Moderate Drift,42,Isolation Forest,81,19,0.81
+22,Strong Drift,43,Modified Z-Score,55,45,0.55
+22,Strong Drift,43,Isolation Forest,99,1,0.99
+22,Severe Drift,44,Modified Z-Score,90,10,0.9
+22,Severe Drift,44,Isolation Forest,100,0,1.0
+23,Baseline,40,Modified Z-Score,0,100,0.0
+23,Baseline,40,Isolation Forest,13,87,0.13
+23,Mild Drift,41,Modified Z-Score,1,99,0.01
+23,Mild Drift,41,Isolation Forest,42,58,0.42
+23,Moderate Drift,42,Modified Z-Score,24,76,0.24
+23,Moderate Drift,42,Isolation Forest,88,12,0.88
+23,Strong Drift,43,Modified Z-Score,73,27,0.73
+23,Strong Drift,43,Isolation Forest,100,0,1.0
+23,Severe Drift,44,Modified Z-Score,99,1,0.99
+23,Severe Drift,44,Isolation Forest,100,0,1.0
+24,Baseline,40,Modified Z-Score,0,100,0.0
+24,Baseline,40,Isolation Forest,16,84,0.16
+24,Mild Drift,41,Modified Z-Score,0,100,0.0
+24,Mild Drift,41,Isolation Forest,41,59,0.41
+24,Moderate Drift,42,Modified Z-Score,16,84,0.16
+24,Moderate Drift,42,Isolation Forest,90,10,0.9
+24,Strong Drift,43,Modified Z-Score,59,41,0.59
+24,Strong Drift,43,Isolation Forest,100,0,1.0
+24,Severe Drift,44,Modified Z-Score,90,10,0.9
+24,Severe Drift,44,Isolation Forest,100,0,1.0
+25,Baseline,40,Modified Z-Score,0,100,0.0
+25,Baseline,40,Isolation Forest,12,88,0.12
+25,Mild Drift,41,Modified Z-Score,1,99,0.01
+25,Mild Drift,41,Isolation Forest,40,60,0.4
+25,Moderate Drift,42,Modified Z-Score,23,77,0.23
+25,Moderate Drift,42,Isolation Forest,83,17,0.83
+25,Strong Drift,43,Modified Z-Score,68,32,0.68
+25,Strong Drift,43,Isolation Forest,97,3,0.97
+25,Severe Drift,44,Modified Z-Score,93,7,0.93
+25,Severe Drift,44,Isolation Forest,100,0,1.0
+26,Baseline,40,Modified Z-Score,0,100,0.0
+26,Baseline,40,Isolation Forest,13,87,0.13
+26,Mild Drift,41,Modified Z-Score,0,100,0.0
+26,Mild Drift,41,Isolation Forest,36,64,0.36
+26,Moderate Drift,42,Modified Z-Score,30,70,0.3
+26,Moderate Drift,42,Isolation Forest,82,18,0.82
+26,Strong Drift,43,Modified Z-Score,67,33,0.67
+26,Strong Drift,43,Isolation Forest,96,4,0.96
+26,Severe Drift,44,Modified Z-Score,90,10,0.9
+26,Severe Drift,44,Isolation Forest,100,0,1.0
+27,Baseline,40,Modified Z-Score,0,100,0.0
+27,Baseline,40,Isolation Forest,15,85,0.15
+27,Mild Drift,41,Modified Z-Score,1,99,0.01
+27,Mild Drift,41,Isolation Forest,43,57,0.43
+27,Moderate Drift,42,Modified Z-Score,18,82,0.18
+27,Moderate Drift,42,Isolation Forest,85,15,0.85
+27,Strong Drift,43,Modified Z-Score,55,45,0.55
+27,Strong Drift,43,Isolation Forest,96,4,0.96
+27,Severe Drift,44,Modified Z-Score,90,10,0.9
+27,Severe Drift,44,Isolation Forest,100,0,1.0
+28,Baseline,40,Modified Z-Score,0,100,0.0
+28,Baseline,40,Isolation Forest,13,87,0.13
+28,Mild Drift,41,Modified Z-Score,0,100,0.0
+28,Mild Drift,41,Isolation Forest,36,64,0.36
+28,Moderate Drift,42,Modified Z-Score,12,88,0.12
+28,Moderate Drift,42,Isolation Forest,84,16,0.84
+28,Strong Drift,43,Modified Z-Score,56,44,0.56
+28,Strong Drift,43,Isolation Forest,98,2,0.98
+28,Severe Drift,44,Modified Z-Score,93,7,0.93
+28,Severe Drift,44,Isolation Forest,100,0,1.0
+29,Baseline,40,Modified Z-Score,0,100,0.0
+29,Baseline,40,Isolation Forest,7,93,0.07
+29,Mild Drift,41,Modified Z-Score,3,97,0.03
+29,Mild Drift,41,Isolation Forest,35,65,0.35
+29,Moderate Drift,42,Modified Z-Score,14,86,0.14
+29,Moderate Drift,42,Isolation Forest,75,25,0.75
+29,Strong Drift,43,Modified Z-Score,69,31,0.69
+29,Strong Drift,43,Isolation Forest,98,2,0.98
+29,Severe Drift,44,Modified Z-Score,96,4,0.96
+29,Severe Drift,44,Isolation Forest,100,0,1.0
+30,Baseline,40,Modified Z-Score,0,100,0.0
+30,Baseline,40,Isolation Forest,12,88,0.12
+30,Mild Drift,41,Modified Z-Score,0,100,0.0
+30,Mild Drift,41,Isolation Forest,34,66,0.34
+30,Moderate Drift,42,Modified Z-Score,10,90,0.1
+30,Moderate Drift,42,Isolation Forest,81,19,0.81
+30,Strong Drift,43,Modified Z-Score,39,61,0.39
+30,Strong Drift,43,Isolation Forest,96,4,0.96
+30,Severe Drift,44,Modified Z-Score,87,13,0.87
+30,Severe Drift,44,Isolation Forest,100,0,1.0
